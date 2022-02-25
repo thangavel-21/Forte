@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/permissionIcon"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/ic_baseline_admin_panel_settings_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35"/>
+
+    <TextView
+        android:id="@+id/permissionDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This app requires stoarge permission to access media  files"
+        android:textSize="16sp"
+        android:fontFamily="@font/roboto_regular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@+id/permissionIcon"
+        android:textAlignment="center"
+        android:padding="14dp"/>
+
+    <Button
+        android:id="@+id/permissionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Give Permission"
+        app:layout_constraintEnd_toEndOf="@+id/permissionIcon"
+        app:layout_constraintStart_toStartOf="@+id/permissionIcon"
+        app:layout_constraintTop_toBottomOf="@+id/permissionDesc"
+        android:layout_marginTop="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
